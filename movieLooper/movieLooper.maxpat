@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 86.0, 87.0, 1332.0, 707.0 ],
+		"rect" : [ 56.0, 92.0, 1332.0, 707.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -43,7 +43,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 875.0, 376.0, 75.0, 22.0 ],
+					"patching_rect" : [ 933.0, 437.0, 75.0, 22.0 ],
 					"style" : "",
 					"text" : "s \bcurretPath"
 				}
@@ -789,13 +789,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-51",
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 866.0, 335.0, 320.0, 22.0 ],
+					"patching_rect" : [ 866.0, 335.0, 320.0, 49.0 ],
 					"style" : "",
-					"text" : "\"Macintosh HD:/Users/ttanaka/Downloads/movieLooper2/\""
+					"text" : "\"Macintosh HD:/Users/ttanaka/GitHub_Work/MovieLooper/movieLooper/\""
 				}
 
 			}
@@ -1556,7 +1557,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 154.0, 79.0, 1252.0, 685.0 ],
+						"rect" : [ 154.0, 400.0, 1252.0, 685.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1613,7 +1614,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-9",
-									"int" : 1,
 									"maxclass" : "gswitch",
 									"numinlets" : 3,
 									"numoutlets" : 1,
@@ -2446,21 +2446,21 @@
 																				"filekind" : "audiofile",
 																				"loop" : 0,
 																				"content_state" : 																				{
-																					"slurtime" : [ 0.0 ],
-																					"pitchshift" : [ 1.0 ],
-																					"originallengthms" : [ 0.0 ],
-																					"quality" : [ "basic" ],
-																					"speed" : [ 1.0 ],
 																					"formantcorrection" : [ 0 ],
-																					"timestretch" : [ 0 ],
-																					"followglobaltempo" : [ 0 ],
-																					"play" : [ 0 ],
-																					"pitchcorrection" : [ 0 ],
 																					"formant" : [ 1.0 ],
+																					"timestretch" : [ 0 ],
 																					"originaltempo" : [ 120.0 ],
 																					"mode" : [ "basic" ],
+																					"slurtime" : [ 0.0 ],
+																					"followglobaltempo" : [ 0 ],
 																					"basictuning" : [ 440 ],
-																					"originallength" : [ 0.0, "ticks" ]
+																					"pitchshift" : [ 1.0 ],
+																					"play" : [ 0 ],
+																					"originallength" : [ 0.0, "ticks" ],
+																					"quality" : [ "basic" ],
+																					"originallengthms" : [ 0.0 ],
+																					"pitchcorrection" : [ 0 ],
+																					"speed" : [ 1.0 ]
 																				}
 
 																			}
@@ -2498,21 +2498,21 @@
 																				"filekind" : "audiofile",
 																				"loop" : 0,
 																				"content_state" : 																				{
-																					"slurtime" : [ 0.0 ],
-																					"pitchshift" : [ 1.0 ],
-																					"originallengthms" : [ 0.0 ],
-																					"quality" : [ "basic" ],
-																					"speed" : [ 1.0 ],
 																					"formantcorrection" : [ 0 ],
-																					"timestretch" : [ 0 ],
-																					"followglobaltempo" : [ 0 ],
-																					"play" : [ 0 ],
-																					"pitchcorrection" : [ 0 ],
 																					"formant" : [ 1.0 ],
+																					"timestretch" : [ 0 ],
 																					"originaltempo" : [ 120.0 ],
 																					"mode" : [ "basic" ],
+																					"slurtime" : [ 0.0 ],
+																					"followglobaltempo" : [ 0 ],
 																					"basictuning" : [ 440 ],
-																					"originallength" : [ 0.0, "ticks" ]
+																					"pitchshift" : [ 1.0 ],
+																					"play" : [ 0 ],
+																					"originallength" : [ 0.0, "ticks" ],
+																					"quality" : [ "basic" ],
+																					"originallengthms" : [ 0.0 ],
+																					"pitchcorrection" : [ 0 ],
+																					"speed" : [ 1.0 ]
 																				}
 
 																			}
@@ -5622,13 +5622,6 @@
 								}
 
 							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-33", 0 ],
-									"source" : [ "obj-9", 0 ]
-								}
-
-							}
  ],
 						"styles" : [ 							{
 								"name" : "AudioStatus_Menu",
@@ -6671,7 +6664,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-45",
@@ -8801,7 +8793,6 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-9",
@@ -12181,64 +12172,22 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "movRecControll.maxpat",
-				"bootpath" : "~/Downloads/movieLooper2",
+				"bootpath" : "~/GitHub_Work/MovieLooper/movieLooper",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "s1.png",
-				"bootpath" : "~/Documents/max/movieLooper2",
-				"patcherrelativepath" : "../../Documents/max/movieLooper2",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "s2.png",
-				"bootpath" : "~/Documents/max/movieLooper2",
-				"patcherrelativepath" : "../../Documents/max/movieLooper2",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "s3.png",
-				"bootpath" : "~/Documents/max/movieLooper2",
-				"patcherrelativepath" : "../../Documents/max/movieLooper2",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "s4.png",
-				"bootpath" : "~/Documents/max/movieLooper2",
-				"patcherrelativepath" : "../../Documents/max/movieLooper2",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "s5.png",
-				"bootpath" : "~/Documents/max/movieLooper2",
-				"patcherrelativepath" : "../../Documents/max/movieLooper2",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "s6.png",
-				"bootpath" : "~/Documents/max/movieLooper2",
-				"patcherrelativepath" : "../../Documents/max/movieLooper2",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "FM-Rim.wav",
 				"bootpath" : "~/Music/Audio Music Apps/SoundFont Samples/4OPFM.SF2.Samples",
-				"patcherrelativepath" : "../../Music/Audio Music Apps/SoundFont Samples/4OPFM.SF2.Samples",
+				"patcherrelativepath" : "../../../Music/Audio Music Apps/SoundFont Samples/4OPFM.SF2.Samples",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cowbell.wav",
 				"bootpath" : "~/cocos2d-2.0-x-2.0.3/samples/TestJavascript/Resources",
-				"patcherrelativepath" : "../../cocos2d-2.0-x-2.0.3/samples/TestJavascript/Resources",
+				"patcherrelativepath" : "../../../cocos2d-2.0-x-2.0.3/samples/TestJavascript/Resources",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
