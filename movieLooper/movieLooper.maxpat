@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 187.0, 45.0, 1332.0, 512.0 ],
+		"rect" : [ 206.0, 415.0, 1332.0, 512.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -820,7 +820,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 866.0, 335.0, 320.0, 49.0 ],
 					"style" : "",
-					"text" : "\"Macintosh HD:/Users/ttanaka/GitHub_Work/MovieLooper/movieLooper/\""
+					"text" : "\"Macintosh HD:/Users/takashitanaka/Documents/GitHub/MovieLooper/movieLooper/\""
 				}
 
 			}
@@ -1581,7 +1581,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 86.0, 166.0, 1252.0, 685.0 ],
+						"rect" : [ 99.0, 228.0, 1252.0, 685.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1608,6 +1608,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-11",
@@ -2392,7 +2393,7 @@
 															"modernui" : 1
 														}
 ,
-														"rect" : [ 540.0, 303.0, 640.0, 480.0 ],
+														"rect" : [ 540.0, 303.0, 791.0, 569.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -2421,14 +2422,69 @@
 														"subpatcher_template" : "",
 														"boxes" : [ 															{
 																"box" : 																{
-																	"id" : "obj-19",
+																	"fontname" : "Arial",
+																	"fontsize" : 13.0,
+																	"id" : "obj-28",
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 521.0, 256.0, 29.5, 22.0 ],
+																	"patching_rect" : [ 507.0, 282.0, 36.0, 23.0 ],
 																	"style" : "",
-																	"text" : "1"
+																	"text" : "0.25"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-19",
+																	"maxclass" : "scope~",
+																	"numinlets" : 2,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 507.0, 364.0, 92.0, 64.0 ],
+																	"range" : [ -0.01, 1.01 ],
+																	"style" : ""
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"fontname" : "Arial",
+																	"fontsize" : 13.0,
+																	"id" : "obj-20",
+																	"maxclass" : "newobj",
+																	"numinlets" : 5,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "signal", "signal", "", "" ],
+																	"patching_rect" : [ 507.0, 331.0, 213.0, 23.0 ],
+																	"style" : "",
+																	"text" : "adsr~ 0.5 10 0. 500 @retrigger 100"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-4",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "signal" ],
+																	"patching_rect" : [ 412.0, 369.0, 32.0, 22.0 ],
+																	"style" : "",
+																	"text" : "*~ 0"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-1",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "signal" ],
+																	"patching_rect" : [ 375.0, 326.547028, 46.0, 22.0 ],
+																	"style" : "",
+																	"text" : "noise~"
 																}
 
 															}
@@ -2464,45 +2520,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"data" : 																	{
-																		"clips" : [ 																			{
-																				"filename" : "Macintosh HD:/Users/ttanaka/cocos2d-2.0-x-2.0.3/samples/TestJavascript/Resources/cowbell.wav",
-																				"filekind" : "audiofile",
-																				"loop" : 0,
-																				"content_state" : 																				{
-																					"formant" : [ 1.0 ],
-																					"basictuning" : [ 440 ],
-																					"pitchcorrection" : [ 0 ],
-																					"timestretch" : [ 0 ],
-																					"speed" : [ 1.0 ],
-																					"pitchshift" : [ 1.0 ],
-																					"mode" : [ "basic" ],
-																					"originaltempo" : [ 120.0 ],
-																					"play" : [ 0 ],
-																					"slurtime" : [ 0.0 ],
-																					"originallength" : [ 0.0, "ticks" ],
-																					"quality" : [ "basic" ],
-																					"formantcorrection" : [ 0 ],
-																					"followglobaltempo" : [ 0 ],
-																					"originallengthms" : [ 0.0 ]
-																				}
-
-																			}
- ]
-																	}
-,
-																	"id" : "obj-16",
-																	"maxclass" : "playlist~",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-																	"patching_rect" : [ 455.0, 383.0, 150.0, 30.0 ],
-																	"style" : ""
-																}
-
-															}
-, 															{
-																"box" : 																{
 																	"id" : "obj-8",
 																	"maxclass" : "message",
 																	"numinlets" : 2,
@@ -2511,45 +2528,6 @@
 																	"patching_rect" : [ 421.0, 272.0, 29.5, 22.0 ],
 																	"style" : "",
 																	"text" : "1"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"data" : 																	{
-																		"clips" : [ 																			{
-																				"filename" : "Macintosh HD:/Users/ttanaka/Music/Audio Music Apps/SoundFont Samples/4OPFM.SF2.Samples/FM-Rim.wav",
-																				"filekind" : "audiofile",
-																				"loop" : 0,
-																				"content_state" : 																				{
-																					"formant" : [ 1.0 ],
-																					"basictuning" : [ 440 ],
-																					"pitchcorrection" : [ 0 ],
-																					"timestretch" : [ 0 ],
-																					"speed" : [ 1.0 ],
-																					"pitchshift" : [ 1.0 ],
-																					"mode" : [ "basic" ],
-																					"originaltempo" : [ 120.0 ],
-																					"play" : [ 0 ],
-																					"slurtime" : [ 0.0 ],
-																					"originallength" : [ 0.0, "ticks" ],
-																					"quality" : [ "basic" ],
-																					"formantcorrection" : [ 0 ],
-																					"followglobaltempo" : [ 0 ],
-																					"originallengthms" : [ 0.0 ]
-																				}
-
-																			}
- ]
-																	}
-,
-																	"id" : "obj-4",
-																	"maxclass" : "playlist~",
-																	"numinlets" : 1,
-																	"numoutlets" : 5,
-																	"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-																	"patching_rect" : [ 405.5, 308.047028, 150.0, 30.0 ],
-																	"style" : ""
 																}
 
 															}
@@ -2734,6 +2712,13 @@
  ],
 														"lines" : [ 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-4", 0 ],
+																	"source" : [ "obj-1", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-15", 0 ],
 																	"order" : 0,
 																	"source" : [ "obj-10", 0 ]
@@ -2774,13 +2759,6 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-6", 0 ],
-																	"source" : [ "obj-16", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
 																	"destination" : [ "obj-18", 0 ],
 																	"source" : [ "obj-17", 0 ]
 																}
@@ -2788,22 +2766,40 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-16", 0 ],
-																	"source" : [ "obj-19", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-8", 0 ],
+																	"destination" : [ "obj-3", 0 ],
+																	"order" : 1,
 																	"source" : [ "obj-2", 0 ]
 																}
 
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-6", 0 ],
-																	"source" : [ "obj-3", 0 ]
+																	"destination" : [ "obj-8", 0 ],
+																	"order" : 0,
+																	"source" : [ "obj-2", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-19", 0 ],
+																	"order" : 0,
+																	"source" : [ "obj-20", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-4", 1 ],
+																	"order" : 1,
+																	"source" : [ "obj-20", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-20", 0 ],
+																	"source" : [ "obj-28", 0 ]
 																}
 
 															}
@@ -2839,7 +2835,7 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-4", 0 ],
+																	"destination" : [ "obj-28", 0 ],
 																	"source" : [ "obj-8", 0 ]
 																}
 
@@ -7088,7 +7084,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "jit_matrix" ],
 													"patching_rect" : [ 575.0, 137.0, 100.0, 100.0 ],
-													"pic" : "/Users/ttanaka/Documents/max/movieLooper2/s6.png"
+													"pic" : "s6.png"
 												}
 
 											}
@@ -7618,7 +7614,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "jit_matrix" ],
 													"patching_rect" : [ 531.0, 151.0, 100.0, 100.0 ],
-													"pic" : "/Users/ttanaka/Documents/max/movieLooper2/s5.png"
+													"pic" : "s5.png"
 												}
 
 											}
@@ -8148,7 +8144,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "jit_matrix" ],
 													"patching_rect" : [ 559.0, 177.0, 100.0, 100.0 ],
-													"pic" : "/Users/ttanaka/Documents/max/movieLooper2/s4.png"
+													"pic" : "s4.png"
 												}
 
 											}
@@ -8678,7 +8674,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "jit_matrix" ],
 													"patching_rect" : [ 505.0, 110.0, 100.0, 100.0 ],
-													"pic" : "/Users/ttanaka/Documents/max/movieLooper2/s3.png"
+													"pic" : "s3.png"
 												}
 
 											}
@@ -9631,7 +9627,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 958.0, 188.0, 320.0, 49.0 ],
 													"style" : "",
-													"text" : "\"Macintosh HD:/Users/ttanaka/GitHub_Work/MovieLooper/movieLooper/\""
+													"text" : "\"Macintosh HD:/Users/takashitanaka/Documents/GitHub/MovieLooper/movieLooper/\""
 												}
 
 											}
@@ -12538,37 +12534,51 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "movRecControll.maxpat",
-				"bootpath" : "~/GitHub_Work/MovieLooper/movieLooper",
+				"bootpath" : "~/Documents/GitHub/MovieLooper/movieLooper",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s1.png",
-				"bootpath" : "~/GitHub_Work/MovieLooper/movieLooper",
+				"bootpath" : "~/Documents/GitHub/MovieLooper/movieLooper",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "s2.png",
-				"bootpath" : "~/GitHub_Work/MovieLooper/movieLooper",
+				"bootpath" : "~/Documents/GitHub/MovieLooper/movieLooper",
 				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "FM-Rim.wav",
-				"bootpath" : "~/Music/Audio Music Apps/SoundFont Samples/4OPFM.SF2.Samples",
-				"patcherrelativepath" : "../../../Music/Audio Music Apps/SoundFont Samples/4OPFM.SF2.Samples",
-				"type" : "WAVE",
+				"name" : "s3.png",
+				"bootpath" : "~/Documents/GitHub/MovieLooper/movieLooper",
+				"patcherrelativepath" : ".",
+				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cowbell.wav",
-				"bootpath" : "~/cocos2d-2.0-x-2.0.3/samples/TestJavascript/Resources",
-				"patcherrelativepath" : "../../../cocos2d-2.0-x-2.0.3/samples/TestJavascript/Resources",
-				"type" : "WAVE",
+				"name" : "s4.png",
+				"bootpath" : "~/Documents/GitHub/MovieLooper/movieLooper",
+				"patcherrelativepath" : ".",
+				"type" : "PNG ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s5.png",
+				"bootpath" : "~/Documents/GitHub/MovieLooper/movieLooper",
+				"patcherrelativepath" : ".",
+				"type" : "PNG ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "s6.png",
+				"bootpath" : "~/Documents/GitHub/MovieLooper/movieLooper",
+				"patcherrelativepath" : ".",
+				"type" : "PNG ",
 				"implicit" : 1
 			}
  ],
